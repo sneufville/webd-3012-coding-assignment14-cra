@@ -1,15 +1,10 @@
 import React from "react";
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
+import router from "./routes";
 
 function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1>Coding Assignment 14</h1>
-        <small>WEBD 3012 - Business Systems Build & Test</small>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
