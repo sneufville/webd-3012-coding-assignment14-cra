@@ -1,0 +1,20 @@
+### ReactNative template
+# React Native Stack Base
+
+.expo
+__generated__
+
+### react template
+.DS_*
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+psd
+thumb
+sketch
+build
+npm-debug.log

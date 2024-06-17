@@ -1,9 +1,9 @@
-FROM node:20-alpine
+FROM node:20-alpine as node_env
 LABEL authors="sneufville"
 
 # Set the working directory
-WORKDIR /neufville_simon_ui_garden_build_checks
-ENV PATH /neufville_simon_ui_garden_build_checks/node_modules/.bin:$PATH
+WORKDIR /neufville_simon_final_site
+ENV PATH /neufville_simon_final_site/node_modules/.bin:$PATH
 
 # Copy package and lock files
 COPY package.json .
@@ -15,8 +15,18 @@ RUN npm install --silent
 # Copy all files to destination
 COPY . .
 
-# Expose port
-EXPOSE 8018
+# build the react application
+RUN npm run build
 
-# Start storybook
-CMD ["npm", "run", "storybook"]
+
+# Nginx Setup
+FROM nginx:alpine
+
+# Copy files
+COPY --from=node_env /neufville_simon_final_site/build /usr/share/nginx/html
+
+# Expose port
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
