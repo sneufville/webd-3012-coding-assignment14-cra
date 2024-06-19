@@ -1,6 +1,41 @@
 {
   "siteSections": {
-    "basicInformation": {},
+    "basicInformation": {
+      "aboutMe": "Hi, I'm Simon, seasoned Full Stack Web Developer with UI/UX design experience. My focus is building unique and engaging user experiences with the latest and greatest technologies. I believe in using the most appropriate tools, languages and frameworks to get things done. Currently, I am delving into devops and workflow automation and to that end, I have created 2 NPM packages that allow you to easily scaffold Python-based Full Stack Web applications.",
+      "aboutSite": "The purpose of this site to showcase the my works as a Full Stack Developer.",
+      "areasOfFocus": ["Full Stack Development", "Mobile App Development", "Workflow Automation", "Testing"],
+      "sectionSummaries": [
+        {
+          "sectionName": "Developer Setup",
+          "description": "Provides an overview of my IDE setup, preferred terminal emulator and other developer-related preferences.",
+          "path": "/developer-setup"
+        },
+        {
+          "sectionName": "Resources",
+          "description": "Provides a collection of resources I have used to learn full stack web development and development in general.",
+          "path": "/resources"
+        },
+        {
+          "sectionName": "Skills",
+          "description": "Showcases the skills I have acquired over time and what they can potentially be used for.",
+          "path": "/skills"
+        },
+        {
+          "sectionName": "Work",
+          "description": "Showcases the work that I have done in this program as well as in my professional career. This section will also include open-source projects that I have worked on.",
+          "path": "/work"
+        }
+      ],
+      "siteTitle": "Simon Neufville",
+      "socialLinks": {
+        "github": {
+          "name": "GitHub: SNeufville",
+          "iconName": "github",
+          "path": "https://github.com/sneufville"
+        }
+      },
+      "titles": ["Full Stack Web Developer", "Mobile Application Developer", "UI Designer"]
+    },
     "work": {},
     "skills": {
       "description": "This section provides an overview of the skills, languages and frameworks and tools.",

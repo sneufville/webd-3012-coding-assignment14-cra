@@ -22,7 +22,7 @@ const AppNav: React.FC<AppNavProps> = ({ disabled, siteTitle }) => {
       disabled={disabled}
     >
       <Link
-        className='cursor-pointer'
+        className='cursor-pointer p-2 border-2'
         to='/'
       >
         {siteTitle}

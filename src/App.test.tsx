@@ -4,6 +4,6 @@ import App from "./App";
 
 test("renders main app", async () => {
   render(<App />);
-  const linkElement = await screen.findByText(/Coding Assignment 14/i);
+  const linkElement = await screen.findByText(/About Me/i);
   expect(linkElement).toBeInTheDocument();
 }, 2000);

@@ -5,8 +5,8 @@ import router from "./routes";
 
 function App() {
   return (
-    <div className='h-screen w-full bg-midnight text-white'>
-      <div className='container mx-auto'>
+    <div className=' h-screen w-full bg-midnight text-white overflow-y-scroll'>
+      <div className='container h-full mx-auto'>
         <RouterProvider router={router} />
       </div>
     </div>
