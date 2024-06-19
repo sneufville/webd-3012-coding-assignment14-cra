@@ -25,3 +25,19 @@ export type DefaultImageComponentProps = DefaultComponentProps & {
    */
   testId?: string;
 };
+
+export type SkillLanguage = {
+  name: string;
+  iconName: string;
+  description: string;
+  uses: Array<string>;
+};
+
+export type AppData = {
+  siteSections: {
+    skills: {
+      description: string;
+      languages: Array<SkillLanguage>;
+    };
+  };
+};

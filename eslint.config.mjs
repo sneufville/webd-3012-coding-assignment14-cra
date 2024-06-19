@@ -5,7 +5,7 @@ import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
 
 
 export default [
-  {ignores: ['build/*']},
+  {ignores: ['build/*', 'tailwind.config.js', 'postcss.config.js']},
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,

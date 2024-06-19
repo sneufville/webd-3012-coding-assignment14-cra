@@ -1,0 +1,68 @@
+{
+  "siteSections": {
+    "basicInformation": {},
+    "work": {},
+    "skills": {
+      "description": "This section provides an overview of the skills, languages and frameworks and tools.",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "iconName": "javascript",
+          "description": "",
+          "uses": ["web development", "frontend development"]
+        },
+        {
+          "name": "Python",
+          "iconName": "python",
+          "description": "",
+          "uses": ["web development", "data science"]
+        },
+        {
+          "name": "Ruby",
+          "iconName": "ruby",
+          "description": "",
+          "uses": ["web development"]
+        },
+        {
+          "name": "TypeScript",
+          "iconName": "typescript",
+          "description": "",
+          "uses": ["web development"]
+        },
+        {
+          "name": "Pandas",
+          "iconName": "pandas",
+          "description": "",
+          "uses": ["data science"]
+        }
+      ],
+      "tools": [
+        {
+          "name": ""
+        }
+      ]
+    },
+    "resources": {},
+    "developerSetup": {
+      "ideSetup": {
+        "name": "WebStorm"
+      },
+      "devEnvironment": {
+        "operatingSystem": {
+          "name": "Ubuntu (Linux)"
+        },
+        "terminalSetup": {
+          "preferredShell": "Zsh",
+          "addOns": [
+            "oh my zsh"
+          ]
+        },
+        "preferredFontSettings": {
+          "name": "menlo",
+          "fontSize": 13,
+          "lineSpacing": 1.7
+        }
+      }
+    }
+  }
+}

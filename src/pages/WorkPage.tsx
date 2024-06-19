@@ -5,12 +5,13 @@
  */
 
 import React from "react";
+import PageWrapper from "../components/PageWrapper/PageWrapper";
 
 const WorkPage = (): React.ReactElement => {
   return (
-    <header className='App-header'>
+    <PageWrapper>
       <h1>Work Page</h1>
-    </header>
+    </PageWrapper>
   );
 };
 

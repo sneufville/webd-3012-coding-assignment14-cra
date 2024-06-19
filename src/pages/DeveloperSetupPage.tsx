@@ -4,12 +4,13 @@
  * project  coding-assignment-14-cra
  */
 import React from "react";
+import PageWrapper from "../components/PageWrapper/PageWrapper";
 
 const DeveloperSetupPage = (): React.ReactElement => {
   return (
-    <header className='App-header'>
+    <PageWrapper>
       <h1>Developer Setup page</h1>
-    </header>
+    </PageWrapper>
   );
 };
 

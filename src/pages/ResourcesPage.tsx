@@ -5,12 +5,13 @@
  */
 
 import React from "react";
+import PageWrapper from "../components/PageWrapper/PageWrapper";
 
 const ResourcesPage = (): React.ReactElement => {
   return (
-    <header className='App-header'>
+    <PageWrapper>
       <h1>Resources</h1>
-    </header>
+    </PageWrapper>
   );
 };
 

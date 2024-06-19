@@ -4,7 +4,13 @@ import "./App.css";
 import router from "./routes";
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <div className='h-screen w-full bg-midnight text-white'>
+      <div className='container mx-auto'>
+        <RouterProvider router={router} />
+      </div>
+    </div>
+  );
 }
 
 export default App;
