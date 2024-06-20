@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
 import siteData from "../siteData.json";
 import { Label } from "../components/Label";
+import { HeroImage } from "../components/HeroImage";
 
 const {
   siteSections: { basicInformation },
@@ -18,6 +19,10 @@ const {
 const HomePage = (): React.ReactElement => {
   return (
     <PageWrapper>
+      <HeroImage
+        altText={"developer setup hero image"}
+        src='../code-hero-img.jpg'
+      />
       <h1 className='text-5xl'>{basicInformation.siteTitle}</h1>
       <div className='flex items-center flex-wrap gap-2'>
         {basicInformation.titles.map((title, index) => (

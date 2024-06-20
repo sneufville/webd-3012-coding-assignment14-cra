@@ -79,9 +79,50 @@
     },
     "resources": {},
     "developerSetup": {
+      "description": "Welcome to the dev shelf! Here you'll find the list of tools and technologies that empower me as a developer. These tools help me build, debug and deploy high-quality code efficiently.",
+      "content": [
+        {
+          "category": "Code Editors and IDEs",
+          "tools": [
+            {
+              "name": "WebStorm / IntelliJ IDEA",
+              "description": "",
+              "features": [
+                "Advanced Code Refactoring",
+                "On-the-fly code analysis",
+                "Machine-learning Assisted code completion"
+              ]
+            },
+            {
+              "name": "Datagrip",
+              "description": "",
+              "features": [
+                "Supports multiple database connections"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Code Quality",
+          "tools": {
+            "name": "ESLint",
+            "description": "",
+            "features": [
+              "Ensures high quality of JavaScript / Typescript"
+            ]
+          }
+        }
+      ],
       "ideSetup": {
-        "name": "WebStorm"
+        "name": "WebStorm / IntelliJ IDEA",
+        "description": "",
+        "features": [
+          "Advanced Code Refactoring",
+          "On-the-fly code analysis",
+          "Machine-learning Assisted code completion"
+        ]
       },
+      "versionControl": {},
       "devEnvironment": {
         "operatingSystem": {
           "name": "Ubuntu (Linux)"
