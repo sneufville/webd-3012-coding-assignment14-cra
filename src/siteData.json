@@ -3,7 +3,12 @@
     "basicInformation": {
       "aboutMe": "Hi, I'm Simon, seasoned Full Stack Web Developer with UI/UX design experience. My focus is building unique and engaging user experiences with the latest and greatest technologies. I believe in using the most appropriate tools, languages and frameworks to get things done. Currently, I am delving into devops and workflow automation and to that end, I have created 2 NPM packages that allow you to easily scaffold Python-based Full Stack Web applications.",
       "aboutSite": "The purpose of this site to showcase the my works as a Full Stack Developer.",
-      "areasOfFocus": ["Full Stack Development", "Mobile App Development", "Workflow Automation", "Testing"],
+      "areasOfFocus": [
+        "Full Stack Development",
+        "Mobile App Development",
+        "Workflow Automation",
+        "Testing"
+      ],
       "sectionSummaries": [
         {
           "sectionName": "Developer Setup",
@@ -34,7 +39,11 @@
           "path": "https://github.com/sneufville"
         }
       },
-      "titles": ["Full Stack Web Developer", "Mobile Application Developer", "UI Designer"]
+      "titles": [
+        "Full Stack Web Developer",
+        "Mobile Application Developer",
+        "UI Designer"
+      ]
     },
     "work": {},
     "skills": {
@@ -44,31 +53,43 @@
           "name": "JavaScript",
           "iconName": "javascript",
           "description": "",
-          "uses": ["web development", "frontend development"]
+          "uses": [
+            "web development",
+            "frontend development"
+          ]
         },
         {
           "name": "Python",
           "iconName": "python",
           "description": "",
-          "uses": ["web development", "data science"]
+          "uses": [
+            "web development",
+            "data science"
+          ]
         },
         {
           "name": "Ruby",
           "iconName": "ruby",
           "description": "",
-          "uses": ["web development"]
+          "uses": [
+            "web development"
+          ]
         },
         {
           "name": "TypeScript",
           "iconName": "typescript",
           "description": "",
-          "uses": ["web development"]
+          "uses": [
+            "web development"
+          ]
         },
         {
           "name": "Pandas",
           "iconName": "pandas",
           "description": "",
-          "uses": ["data science"]
+          "uses": [
+            "data science"
+          ]
         }
       ],
       "tools": [
@@ -83,6 +104,7 @@
       "content": [
         {
           "category": "Code Editors and IDEs",
+          "description": "The tools I use when writing code or working with databases.",
           "tools": [
             {
               "name": "WebStorm / IntelliJ IDEA",
@@ -91,7 +113,10 @@
                 "Advanced Code Refactoring",
                 "On-the-fly code analysis",
                 "Machine-learning Assisted code completion"
-              ]
+              ],
+              "extra": {
+                "fontSize": "13"
+              }
             },
             {
               "name": "Datagrip",
@@ -103,14 +128,79 @@
           ]
         },
         {
+          "category": "Testing",
+          "description": "",
+          "tools": [
+            {
+              "name": "Jest",
+              "description": "A JavaScript-based testing framework used for testing JavaScript/Typescript applications",
+              "features": [
+                "Code Coverage",
+                "Mocking Capabilities",
+                "Snapshot testing"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Databases",
+          "description": "",
+          "tools": [
+            {
+              "name": "MariaDB",
+              "description": "A traditional SQL database widely used for web applications",
+              "features": [
+                "Database Transactions",
+                "Open-source"
+              ]
+            },
+            {
+              "name": "MongoDB",
+              "description": "A NoSQL database that is highly flexible and scalable.",
+              "features": [
+                "Highly Scalable",
+                "JSON-like structure"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Deployment and CI/CD",
+          "tools": [
+            {
+              "name": "Docker",
+              "description": "A powerful tool for creating, deploying and managing containerized applications",
+              "features": [
+                "Containerization",
+                "Portability",
+                "Scalability and Orchestration",
+                "Version Control and CI/CD Integration"
+              ]
+            },
+            {
+              "name": "GitHub Actions",
+              "description": "An automation tool that allows you to build, test and deploy code on GitHub",
+              "features": [
+                "Integrated CI/CD",
+                "Custom Workflows",
+                "GitHub Ecosystem Integration"
+              ]
+            }
+          ]
+        },
+        {
           "category": "Code Quality",
-          "tools": {
-            "name": "ESLint",
-            "description": "",
-            "features": [
-              "Ensures high quality of JavaScript / Typescript"
-            ]
-          }
+          "tools": [
+            {
+              "name": "ESLint",
+              "description": "A powerful tool for identifying and fixing problems in JavaScript/Typescript code.",
+              "features": [
+                "Customizable Rules",
+                "Ensures high quality of JavaScript / Typescript",
+                "Plugins and Extensions"
+              ]
+            }
+          ]
         }
       ],
       "ideSetup": {
