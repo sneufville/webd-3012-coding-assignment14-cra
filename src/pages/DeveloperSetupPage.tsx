@@ -5,6 +5,9 @@
  */
 import React from "react";
 import { HiWrenchScrewdriver } from "react-icons/hi2";
+import { RiFontFamily, RiFontSize2, RiLineHeight } from "react-icons/ri";
+import { SiUbuntu, SiZsh } from "react-icons/si";
+import { BiSolidExtension } from "react-icons/bi";
 import { FaCheck } from "react-icons/fa";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
 import { HeroImage } from "../components/HeroImage";
@@ -24,6 +27,61 @@ const DeveloperSetupPage = (): React.ReactElement => {
       />
       <h1 className='text-5xl'>Developer Setup</h1>
       <p className='leading-8'>{developerSetup.description}</p>
+      <hr />
+      <h2 className='text-3xl'>Developer Preferences</h2>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+        <div className='flex flex-col gap-y-2'>
+          <h3 className='text-xl font-medium'>Preferred OS</h3>
+          <Label
+            iconElement={<SiUbuntu />}
+            labelText={developerSetup.devEnvironment.operatingSystem.name}
+          />
+          <h4 className='font-medium'>Addons</h4>
+          <div className='flex items-center gap-2 flex-wrap'>
+            {developerSetup.devEnvironment.operatingSystem.addOns.map((addOn) => (
+              <Label
+                key={addOn}
+                iconElement={<BiSolidExtension />}
+                labelText={addOn}
+              />
+            ))}
+          </div>
+        </div>
+        <div className='flex flex-col gap-y-2'>
+          <h3 className='text-xl font-medium'>Preferred Editor Font</h3>
+          <div className='grid grid-cols-1 gap-2'>
+            <Label
+              iconElement={<RiFontFamily />}
+              labelText={`Font Name: ${developerSetup.devEnvironment.preferredFontSettings.name}`}
+            />
+            <Label
+              iconElement={<RiFontSize2 />}
+              labelText={`Font Size: ${developerSetup.devEnvironment.preferredFontSettings.fontSize}`}
+            />
+            <Label
+              iconElement={<RiLineHeight />}
+              labelText={`Line Spacing: ${developerSetup.devEnvironment.preferredFontSettings.lineSpacing}`}
+            />
+          </div>
+        </div>
+        <div className='flex flex-col gap-y-2'>
+          <h3 className='text-xl font-medium'>Preferred Shell / Terminal</h3>
+          <Label
+            iconElement={<SiZsh />}
+            labelText={`${developerSetup.devEnvironment.terminalSetup.preferredShell}`}
+          />
+          <h4 className='font-medium'>Addons</h4>
+          <div className='flex items-center gap-2 flex-wrap'>
+            {developerSetup.devEnvironment.terminalSetup.addOns.map((addOn) => (
+              <Label
+                key={addOn}
+                iconElement={<BiSolidExtension />}
+                labelText={addOn}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
 
       {developerSetup.content.map((content, contentIndex) => (
         <div

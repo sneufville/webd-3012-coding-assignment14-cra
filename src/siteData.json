@@ -45,7 +45,100 @@
         "UI Designer"
       ]
     },
-    "work": {},
+    "work": {
+      "projects": [
+        {
+          "name": "SN - Portfolio (this site)",
+          "yearDone": "2024",
+          "description": "Portfolio website that showcases understanding of building and using a component library for React as well as implementing automated testing and pipelines",
+          "images": [],
+          "technologiesUsed": [
+            {
+              "category": "Programming & Markup Languages",
+              "options": [
+                "Typescript",
+                "JSX"
+              ]
+            },
+            {
+              "category": "Frameworks",
+              "options": [
+                "React"
+              ]
+            },
+            {
+              "category": "Code Quality",
+              "options": [
+                "ESLint",
+                "Prettier"
+              ]
+            },
+            {
+              "category": "Styling",
+              "options": [
+                "Styled Components",
+                "Tailwind CSS"
+              ]
+            },
+            {
+              "category": "CI/CD & Testing",
+              "options": [
+                "Husky",
+                "GitHub Actions",
+                "Jest"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Giffaroni",
+          "yearDone": "2024",
+          "description": "A React project that utilizes the Giffy API to search for and display awesome gifs a user searches for as well as showing gifs that are trending",
+          "images": [],
+          "technologiesUsed": [
+            {
+              "category": "Programming & Markup Languages",
+              "options": [
+                "JavaScript",
+                "HTML"
+              ]
+            },
+            {
+              "category": "Frameworks",
+              "options": [
+                "React"
+              ]
+            },
+            {
+              "category": "Styling",
+              "options": [
+                "CSS3"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SnackerRank",
+          "yearDone": "2023",
+          "description": "",
+          "technologiesUsed": [
+            {
+              "category": "Programming & Markup Languages",
+              "options": [
+                "PHP",
+                "JavaScript",
+                "HTML"
+              ]
+            },
+            {
+              "category": "Styling",
+              "options": ["Materialize CSS"]
+            }
+          ],
+          "repositoryUrl": ""
+        }
+      ]
+    },
     "skills": {
       "description": "This section provides an overview of the skills, languages and frameworks and tools.",
       "languages": [
@@ -55,7 +148,8 @@
           "description": "",
           "uses": [
             "web development",
-            "frontend development"
+            "frontend development",
+            "api development"
           ]
         },
         {
@@ -80,7 +174,8 @@
           "iconName": "typescript",
           "description": "",
           "uses": [
-            "web development"
+            "web development",
+            "mobile app development"
           ]
         },
         {
@@ -115,7 +210,8 @@
                 "Machine-learning Assisted code completion"
               ],
               "extra": {
-                "fontSize": "13"
+                "fontSize": "13",
+                "preferredFont": "Fira Code"
               }
             },
             {
@@ -215,16 +311,22 @@
       "versionControl": {},
       "devEnvironment": {
         "operatingSystem": {
-          "name": "Ubuntu (Linux)"
+          "name": "Ubuntu (Linux)",
+          "preferredDesktop": "GNOME",
+          "addOns": [
+            "RunCat",
+            "Astra Monitor"
+          ]
         },
         "terminalSetup": {
           "preferredShell": "Zsh",
           "addOns": [
-            "oh my zsh"
+            "Oh My Zsh",
+            "Homebrew"
           ]
         },
         "preferredFontSettings": {
-          "name": "menlo",
+          "name": "Menlo",
           "fontSize": 13,
           "lineSpacing": 1.7
         }

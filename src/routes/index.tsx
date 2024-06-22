@@ -5,6 +5,7 @@
  */
 import { createBrowserRouter } from "react-router-dom";
 import React from "react";
+import { AppLoader } from "../components/AppLoader/AppLoader";
 
 // route imports
 const DeveloperSetupPage = React.lazy(() => import("../pages/DeveloperSetupPage"));
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <React.Suspense fallback={<div>loading...</div>}>
+      <React.Suspense fallback={<AppLoader />}>
         <HomePage />
       </React.Suspense>
     ),
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
   {
     path: "/developer-setup",
     element: (
-      <React.Suspense fallback={<div>loading...</div>}>
+      <React.Suspense fallback={<AppLoader />}>
         <DeveloperSetupPage />
       </React.Suspense>
     ),
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
   {
     path: "/resources",
     element: (
-      <React.Suspense fallback={<div>loading...</div>}>
+      <React.Suspense fallback={<AppLoader />}>
         <ResourcesPage />
       </React.Suspense>
     ),
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
   {
     path: "/skills",
     element: (
-      <React.Suspense fallback={<div>loading...</div>}>
+      <React.Suspense fallback={<AppLoader />}>
         <SkillsPage />
       </React.Suspense>
     ),
@@ -51,7 +52,7 @@ const router = createBrowserRouter([
   {
     path: "/work",
     element: (
-      <React.Suspense fallback={<div>loading...</div>}>
+      <React.Suspense fallback={<AppLoader />}>
         <WorkPage />
       </React.Suspense>
     ),

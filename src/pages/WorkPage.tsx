@@ -5,12 +5,66 @@
  */
 
 import React from "react";
+import { BiCalendarCheck } from "react-icons/bi";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
+import { HeroImage } from "../components/HeroImage";
+import siteData from "../siteData.json";
+import { Image } from "../components/Image";
+import { Label } from "../components/Label";
+import { Text } from "../components/Text";
+
+const {
+  siteSections: { work: workSection },
+} = siteData;
 
 const WorkPage = (): React.ReactElement => {
   return (
     <PageWrapper>
-      <h1>Work Page</h1>
+      <HeroImage
+        altText={"Work page banner image"}
+        src={"../code-hero-img.jpg"}
+      />
+      <h1 className='text-5xl'>Work - Showcase</h1>
+      <p>These are the projects that I have worked on</p>
+      <hr />
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        {workSection.projects.map((project, projectIndex) => (
+          <div
+            key={`${projectIndex}-${project.name}`}
+            className='border-1 border-white rounded-md flex gap-x-0 md:gap-x-2'
+          >
+            <div className='w-1/3 lg:w-2/5'>
+              <Image
+                altText={"Project Image"}
+                src={"../../eat-sleep-code-repeat.jpg"}
+              />
+            </div>
+            <div className='py-4 flex flex-col flex-1 pr-2 gap-y-2'>
+              <h2 className='text-2xl'>{project.name}</h2>
+              <p>{project.description}</p>
+              <Label
+                iconElement={<BiCalendarCheck />}
+                labelText={`${project.yearDone}`}
+              />
+              <h3>Technologies Used</h3>
+              <div className='grid grid-cols-1 md:grid-cols-2'>
+                {project.technologiesUsed.map((tech) => (
+                  <div
+                    key={tech.category}
+                    className='flex flex-col gap-y-2'
+                  >
+                    <h4 className='underline text-slate-500'>{tech.category}</h4>
+                    <Text
+                      content={tech.options.join(", ")}
+                      foregroundColor={"#fff"}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </PageWrapper>
   );
 };

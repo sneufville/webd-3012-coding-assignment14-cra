@@ -8,6 +8,9 @@ module.exports = {
           DEFAULT: "#050a15",
         },
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [],
