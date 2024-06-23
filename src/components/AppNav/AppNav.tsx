@@ -6,7 +6,7 @@
 import React from "react";
 import styled from "styled-components";
 import type { AppNavProps, StyledAppNavProps } from "./AppNav.types";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
 
 const StyledAppNav = styled.nav<StyledAppNavProps>`
@@ -16,6 +16,8 @@ const StyledAppNav = styled.nav<StyledAppNavProps>`
 `;
 
 const AppNav: React.FC<AppNavProps> = ({ disabled, siteTitle }) => {
+  const location = useLocation();
+  console.log("location path: ", location.pathname);
   return (
     <StyledAppNav
       className='py-6 flex items-center justify-between'
@@ -29,15 +31,33 @@ const AppNav: React.FC<AppNavProps> = ({ disabled, siteTitle }) => {
       </Link>
       <div className='flex items-center gap-x-4'>
         <Link
-          className='flex items-center gap-x-1'
+          className={[
+            "flex items-center gap-x-1",
+            location.pathname === "/developer-setup" ? "underline" : "no-underline",
+          ].join(" ")}
           to='/developer-setup'
         >
           <FaLaptopCode className='text-white' />
           Developer Setup
         </Link>
-        <Link to='/resources'>Resources</Link>
-        <Link to='/skills'>Skills</Link>
-        <Link to='/work'>Work</Link>
+        <Link
+          to='/resources'
+          className={location.pathname === "/resources" ? "underline" : "no-underline"}
+        >
+          Resources
+        </Link>
+        <Link
+          to='/skills'
+          className={location.pathname === "/skills" ? "underline" : "no-underline"}
+        >
+          Skills
+        </Link>
+        <Link
+          to='/work'
+          className={location.pathname === "/work" ? "underline" : "no-underline"}
+        >
+          Work
+        </Link>
       </div>
     </StyledAppNav>
   );

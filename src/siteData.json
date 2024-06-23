@@ -135,7 +135,9 @@
             },
             {
               "category": "Styling",
-              "options": ["Materialize CSS"]
+              "options": [
+                "Materialize CSS"
+              ]
             }
           ]
         }
@@ -143,57 +145,103 @@
     },
     "skills": {
       "description": "This section provides an overview of the skills, languages and frameworks and tools.",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconName": "javascript",
+      "content": {
+        "programmingLanguages": {
+          "category": "Programming Languages and Frameworks",
           "description": "",
-          "uses": [
-            "web development",
-            "frontend development",
-            "api development"
+          "data": [
+            {
+              "name": "JavaScript",
+              "iconName": "javascript",
+              "description": "A high-level programming language that is an essential part of web development, enabling interactive and dynamic content in web browsers.",
+              "uses": [
+                "web development",
+                "frontend development",
+                "api development"
+              ]
+            },
+            {
+              "name": "TypeScript",
+              "iconName": "typescript",
+              "description": "A statically typed superset of JavaScript, Typescript extends JavaScript by providing additional tools and features with the aim to improve code quality, readability and maintainability.",
+              "uses": [
+                "web development",
+                "mobile app development",
+                "command line utilities"
+              ]
+            },
+            {
+              "name": "Python",
+              "iconName": "python",
+              "description": "A high-level, interpreted programming language known for its readability, simplicity, and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming",
+              "uses": [
+                "web development",
+                "data science",
+                "software development"
+              ]
+            },
+            {
+              "name": "Ruby",
+              "iconName": "ruby",
+              "description": "A dynamic, open-source programming language renowned for its simplicity and productivity, with an elegant syntax that is natural to read and easy to write.",
+              "uses": [
+                "web development",
+                "software development"
+              ]
+            },
+            {
+              "name": "PHP",
+              "iconName": "php",
+              "description": "A widely-used, open-source scripting language especially suited for web development and can be embedded into HTML. Known for its simplicity and speed, PHP enables developers to create dynamic and interactive websites and applications efficiently.",
+              "uses": [
+                "web development"
+              ]
+            }
           ]
         },
-        {
-          "name": "Python",
-          "iconName": "python",
+        "libraries": {
+          "category": "Libraries / Modules",
           "description": "",
-          "uses": [
-            "web development",
-            "data science"
+          "data": [
+            {
+              "name": "Pandas",
+              "iconName": "pandas",
+              "description": "",
+              "uses": [
+                "data science"
+              ]
+            }
           ]
         },
-        {
-          "name": "Ruby",
-          "iconName": "ruby",
+        "tools": {
+          "category": "Tools",
           "description": "",
-          "uses": [
-            "web development"
-          ]
-        },
-        {
-          "name": "TypeScript",
-          "iconName": "typescript",
-          "description": "",
-          "uses": [
-            "web development",
-            "mobile app development"
-          ]
-        },
-        {
-          "name": "Pandas",
-          "iconName": "pandas",
-          "description": "",
-          "uses": [
-            "data science"
+          "data": [
+            {
+              "name": "StorybookJS",
+              "iconName": "storybook",
+              "description": ""
+            },
+            {
+              "name": "Github Actions",
+              "iconName": "github",
+              "description": "",
+              "uses": [
+                "workflow automation",
+                "CI/CD"
+              ]
+            },
+            {
+              "name": "Docker",
+              "iconName": "docker",
+              "description": "",
+              "uses": [
+                "application containers"
+              ]
+            }
           ]
         }
-      ],
-      "tools": [
-        {
-          "name": ""
-        }
-      ]
+      }
     },
     "resources": {},
     "developerSetup": {
