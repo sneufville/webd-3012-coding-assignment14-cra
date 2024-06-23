@@ -52,6 +52,7 @@
           "yearDone": "2024",
           "description": "Portfolio website that showcases understanding of building and using a component library for React as well as implementing automated testing and pipelines",
           "images": [],
+          "repositoryUrl": "https://github.com/sneufville/webd-3012-coding-assignment14-cra",
           "technologiesUsed": [
             {
               "category": "Programming & Markup Languages",
@@ -95,6 +96,7 @@
           "yearDone": "2024",
           "description": "A React project that utilizes the Giffy API to search for and display awesome gifs a user searches for as well as showing gifs that are trending",
           "images": [],
+          "repositoryUrl": "",
           "technologiesUsed": [
             {
               "category": "Programming & Markup Languages",
@@ -120,7 +122,8 @@
         {
           "name": "SnackerRank",
           "yearDone": "2023",
-          "description": "",
+          "description": "Introducing SnackerRank, the ultimate snack ranking website. View and comment on snacks in various categories. This project utilizes PHP, PDO and MySQL.",
+          "repositoryUrl": "https://github.com/sneufville/snackerrank",
           "technologiesUsed": [
             {
               "category": "Programming & Markup Languages",
@@ -134,8 +137,7 @@
               "category": "Styling",
               "options": ["Materialize CSS"]
             }
-          ],
-          "repositoryUrl": ""
+          ]
         }
       ]
     },

@@ -6,12 +6,14 @@
 
 import React from "react";
 import { BiCalendarCheck } from "react-icons/bi";
+import { SiGithub } from "react-icons/si";
+import { Link } from "react-router-dom";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
 import { HeroImage } from "../components/HeroImage";
-import siteData from "../siteData.json";
 import { Image } from "../components/Image";
 import { Label } from "../components/Label";
 import { Text } from "../components/Text";
+import siteData from "../siteData.json";
 
 const {
   siteSections: { work: workSection },
@@ -39,8 +41,18 @@ const WorkPage = (): React.ReactElement => {
                 src={"../../eat-sleep-code-repeat.jpg"}
               />
             </div>
-            <div className='py-4 flex flex-col flex-1 pr-2 gap-y-2'>
-              <h2 className='text-2xl'>{project.name}</h2>
+            <div className='py-4 flex flex-col flex-1 pr-2 gap-y-4'>
+              <div className='flex items-center justify-between'>
+                <h2 className='text-2xl'>{project.name}</h2>
+                <Link
+                  className='flex gap-x-2 bg-indigo-700 py-1 px-2 rounded items-center hover:bg-indigo-400 duration-200 w-fit'
+                  target={"_blank"}
+                  to={project.repositoryUrl}
+                >
+                  <SiGithub />
+                  Link to Project
+                </Link>
+              </div>
               <p>{project.description}</p>
               <Label
                 iconElement={<BiCalendarCheck />}
