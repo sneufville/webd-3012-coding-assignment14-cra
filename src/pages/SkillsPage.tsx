@@ -13,13 +13,15 @@ import {
   SiRuby,
   SiPandas,
   SiPhp,
+  SiStorybook,
+  SiGithubactions,
+  SiDocker,
 } from "react-icons/si";
 import { Text } from "../components/Text";
 import siteData from "../siteData.json";
-import { Label } from "../components/Label";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
 import { HeroImage } from "../components/HeroImage";
-import { BiCheckDouble } from "react-icons/bi";
+import SkillTile from "../components/SkillTile/SkillTile";
 
 const {
   siteSections: { skills },
@@ -35,6 +37,9 @@ const iconElements: Record<string, React.ReactElement> = {
   ruby: <SiRuby size={ICON_SIZE} />,
   pandas: <SiPandas size={ICON_SIZE} />,
   php: <SiPhp size={ICON_SIZE} />,
+  docker: <SiDocker size={ICON_SIZE} />,
+  githubActions: <SiGithubactions size={ICON_SIZE} />,
+  storybook: <SiStorybook size={ICON_SIZE} />,
 };
 
 const SkillsPage = (): React.ReactElement => {
@@ -50,38 +55,62 @@ const SkillsPage = (): React.ReactElement => {
         foregroundColor='#f4f4f4'
       />
       <hr />
-      <h2 className='text-2xl'>Languages and Frameworks</h2>
-
-      <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
-        {skills.content.programmingLanguages.data.map((language, index) => (
-          <div
-            key={`language-${language}-${index}`}
-            className='py-2 flex gap-x-4'
-          >
-            {iconElements[language.iconName]}
-            <div className='flex flex-1 flex-col gap-y-4 md:gap-y-2'>
-              <h2 className='text-2xl'>{language.name}</h2>
-              {language.description ? (
-                <Text
-                  content={language.description}
-                  foregroundColor='#f4f4f4'
-                />
-              ) : undefined}
-              <h3 className='font-medium uppercase'>Used for</h3>
-              <div className='flex items-center flex-wrap gap-x-2'>
-                {language.uses.map((item) => (
-                  <Label
-                    key={item}
-                    labelText={item}
-                    iconElement={<BiCheckDouble />}
-                  />
-                ))}
-              </div>
-            </div>
+      <div className='flex flex-col gap-y-8'>
+        <section className='flex flex-col gap-y-2'>
+          <h2 className='text-2xl'>Languages and Frameworks</h2>
+          <Text
+            content={skills.content.programmingLanguages.description}
+            foregroundColor='#f4f4f4'
+          />
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+            {skills.content.programmingLanguages.data.map((language, index) => (
+              <SkillTile
+                key={`language-${index}`}
+                iconElement={iconElements[language.iconName]}
+                title={language.name}
+                description={language.description}
+                usedFor={language.uses}
+              />
+            ))}
           </div>
-        ))}
+        </section>
+        <section className='flex flex-col gap-y-2'>
+          <h2 className='text-2xl'>Libraries & Modules</h2>
+          <Text
+            content={skills.content.libraries.description}
+            foregroundColor='#f4f4f4'
+          />
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+            {skills.content.libraries.data.map((library, index) => (
+              <SkillTile
+                key={`library-${index}`}
+                iconElement={iconElements[library.iconName]}
+                title={library.name}
+                description={library.description}
+                usedFor={library.uses}
+              />
+            ))}
+          </div>
+        </section>
+        <section className='flex flex-col gap-y-2'>
+          <h2 className='text-2xl'>Tools</h2>
+          <Text
+            content={skills.content.tools.description}
+            foregroundColor='#f4f4f4'
+          />
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+            {skills.content.tools.data.map((tool, index) => (
+              <SkillTile
+                key={`tool-${index}`}
+                iconElement={iconElements[tool.iconName]}
+                title={tool.name}
+                description={tool.description}
+                usedFor={tool.uses}
+              />
+            ))}
+          </div>
+        </section>
       </div>
-      <h2 className='text-2xl'>Tools</h2>
     </PageWrapper>
   );
 };

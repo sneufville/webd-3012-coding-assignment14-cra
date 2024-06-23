@@ -144,22 +144,12 @@
       ]
     },
     "skills": {
-      "description": "This section provides an overview of the skills, languages and frameworks and tools.",
+      "description": "This section provides an overview of the skills, languages and frameworks and tools that I have proficiency with.",
       "content": {
         "programmingLanguages": {
           "category": "Programming Languages and Frameworks",
-          "description": "",
+          "description": "These are the programming languages that I use regularly ordered by most to least used.",
           "data": [
-            {
-              "name": "JavaScript",
-              "iconName": "javascript",
-              "description": "A high-level programming language that is an essential part of web development, enabling interactive and dynamic content in web browsers.",
-              "uses": [
-                "web development",
-                "frontend development",
-                "api development"
-              ]
-            },
             {
               "name": "TypeScript",
               "iconName": "typescript",
@@ -168,6 +158,16 @@
                 "web development",
                 "mobile app development",
                 "command line utilities"
+              ]
+            },
+            {
+              "name": "JavaScript",
+              "iconName": "javascript",
+              "description": "A high-level programming language that is an essential part of web development, enabling interactive and dynamic content in web browsers.",
+              "uses": [
+                "web development",
+                "frontend development",
+                "api development"
               ]
             },
             {
@@ -201,40 +201,45 @@
         },
         "libraries": {
           "category": "Libraries / Modules",
-          "description": "",
+          "description": "Things that allow for the building of more robust applications",
           "data": [
             {
               "name": "Pandas",
               "iconName": "pandas",
-              "description": "",
+              "description": "A powerful, open-source data manipulation and analysis library for Python, widely used in data science and machine learning.",
               "uses": [
-                "data science"
+                "data analysis",
+                "data manipulation"
               ]
             }
           ]
         },
         "tools": {
           "category": "Tools",
-          "description": "",
+          "description": "Things to enhance the workflow as a developer",
           "data": [
             {
               "name": "StorybookJS",
               "iconName": "storybook",
-              "description": ""
+              "description": "An open-source tool for developing, documenting, and testing UI components in isolation for React, Vue, Angular, and other frameworks",
+              "uses": [
+                "ui component testing",
+                "component development"
+              ]
             },
             {
               "name": "Github Actions",
-              "iconName": "github",
-              "description": "",
+              "iconName": "githubActions",
+              "description": "A powerful CI/CD tool integrated directly into GitHub, enabling developers to automate, customize, and manage software development workflows within their repositories",
               "uses": [
                 "workflow automation",
-                "CI/CD"
+                "Continuous Integration / Deployment"
               ]
             },
             {
               "name": "Docker",
               "iconName": "docker",
-              "description": "",
+              "description": "Docker is a platform that enables developers to automate the deployment, scaling, and management of applications using containerization.",
               "uses": [
                 "application containers"
               ]
