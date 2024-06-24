@@ -248,7 +248,41 @@
         }
       }
     },
-    "resources": {},
+    "resources": {
+      "description": "This page is a collection of learn resources and materials that have aided me on my journey to becoming a Full Stack Developer.",
+      "content": [
+        {
+          "category": "Tutorial Websites",
+          "description": "Tutorial sites for learning various programming languages, frameworks and UI design",
+          "data": [
+            {
+              "name": "freeCodeCamp",
+              "iconName": "freeCodeCamp",
+              "description": "A non-profit organization that offers a comprehensive, accessible online platform for learning web development and programming. It provides a structured curriculum covering a wide range of topics including HTML, CSS, JavaScript, front-end and back-end development, data visualization, and more.",
+              "url": "https://www.freecodecamp.org/"
+            },
+            {
+              "name": "Dev.to",
+              "iconName": "devTo",
+              "description": "An inclusive online community platform for software developers to share knowledge, collaborate, and learn from each other. It features user-generated content such as articles, tutorials, and discussions on a wide array of topics related to software development, programming languages, frameworks, and industry trends.",
+              "url": "https://dev.to/"
+            }
+          ]
+        },
+        {
+          "category": "UI Design Inspiration",
+          "description": "Websites that showcase UI & web design",
+          "data": [
+            {
+              "name": "Dribbble",
+              "iconName": "dribbble",
+              "description": "A vibrant online community and platform for designers to showcase their work, gain inspiration, and connect with other creatives. It serves as a portfolio and networking site where designers from various fields, including graphic design, web design, illustration, and UI/UX, can share their projects and receive feedback.",
+              "url": "https://dribbble.com/"
+            }
+          ]
+        }
+      ]
+    },
     "developerSetup": {
       "description": "Welcome to the dev shelf! Here you'll find the list of tools and technologies that empower me as a developer. These tools help me build, debug and deploy high-quality code efficiently.",
       "content": [
