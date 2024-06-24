@@ -22,7 +22,7 @@ docker build . -t "sneufville-coding-assignment14:v1.0"
 
 ```shell
 # run the image
-docker run --name neufville_simon_coding_assignment14 -dp 5575:5575 sneufville-coding-assignment14:v1.0
+docker run --name neufville_simon_coding_assignment14 -dp 5575:80 sneufville-coding-assignment14:v1.0
 ```
 
 The Storybook application will be accessible at `http://localhost:5575`
